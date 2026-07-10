@@ -5,7 +5,7 @@
       <text>model comparison</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>This is a test.</p><p>
+      <text><![CDATA[<p>
 [[lang code='en,other']]This question is based on research by Dr. Francis Torgbor in his MPhil Thesis.[[/lang]]
 [[lang code='fr']]Cette question est basée sur les recherches du Dr Francis Torgbor dans son mémoire de MPhil.[[/lang]]
 </p>
@@ -198,8 +198,7 @@ m_ans3: [
   [castext("[[lang code='en,other']]A[[/lang]][[lang code='fr']]A[[/lang]]"), false],
   [castext("[[lang code='en,other']]B[[/lang]][[lang code='fr']]B[[/lang]]"), false],
   [castext("[[lang code='en,other']]It depends[[/lang]][[lang code='fr']]Cela dépend[[/lang]]"), true]
-];
-]]></text>
+];]]></text>
     </questionvariables>
     <specificfeedback format="html">
       <text/>
