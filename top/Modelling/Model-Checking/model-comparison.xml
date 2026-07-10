@@ -5,110 +5,148 @@
       <text>model comparison</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>This question is based on research by Dr. Francis Torgbor in his MPhil Thesis.</p>
+      <text><![CDATA[<p>
+[[lang code='en,other']]This question is based on research by Dr. Francis Torgbor in his MPhil Thesis.[[/lang]]
+[[lang code='fr']]Cette question est basée sur les recherches du Dr Francis Torgbor dans son mémoire de MPhil.[[/lang]]
+</p>
 
-<p>The thesis looks to create a useful guide in preparation of the effect of rainfall patterns in Ghana. Understanding and modelling rainfall patterns is important. To understand and model the patterns, we need to account for the variability - there is a large variability in rainfall, and this variability can have serious implications on various aspects such as food production and livelihoods. In an attempt to attain a model that describes the pattern for the chance of rain, multiple models were found and then compared to find the “best” model. We will look at two of these models, and call them Model A and Model B.</p>
+<p>
+[[lang code='en,other']]
+The thesis looks to create a useful guide in preparation of the effect of rainfall patterns in Ghana. Understanding and modelling rainfall patterns is important. To understand and model the patterns, we need to account for the variability - there is a large variability in rainfall, and this variability can have serious implications on various aspects such as food production and livelihoods. In an attempt to attain a model that describes the pattern for the chance of rain, multiple models were found and then compared to find the “best” model. We will look at two of these models, and call them Model A and Model B.
+[[/lang]]
+[[lang code='fr']]
+Le mémoire vise à créer un guide utile pour anticiper les effets des régimes de précipitations au Ghana. Comprendre et modéliser les régimes de précipitations est important. Pour comprendre et modéliser ces régimes, il faut tenir compte de leur variabilité : les précipitations sont très variables, et cette variabilité peut avoir des conséquences importantes, par exemple sur la production alimentaire et les moyens de subsistance. Afin d’obtenir un modèle décrivant la probabilité de pluie, plusieurs modèles ont été établis puis comparés afin de déterminer le « meilleur » modèle. Nous examinerons deux de ces modèles, appelés Modèle A et Modèle B.
+[[/lang]]
+</p>
 
-<p>The difference between Model A and B is about whether interactions should be included. That is, in Model B, the Markov component corresponding to the dependence of the rainfall on previous days interacts with the seasonality. In Model A, there is no interaction.</p>
+<p>
+[[lang code='en,other']]
+The difference between Model A and B is about whether interactions should be included. That is, in Model B, the Markov component corresponding to the dependence of the rainfall on previous days interacts with the seasonality. In Model A, there is no interaction.
+[[/lang]]
+[[lang code='fr']]
+La différence entre les modèles A et B porte sur l’inclusion ou non d’interactions. Dans le modèle B, la composante de Markov correspondant à la dépendance des précipitations aux jours précédents interagit avec la saisonnalité. Dans le modèle A, il n’y a pas d’interaction.
+[[/lang]]
+</p>
 
-<p>This illustrative scenario compares the performance of Model A with Model B.</p>
+<p>
+[[lang code='en,other']]This illustrative scenario compares the performance of Model A with Model B.[[/lang]]
+[[lang code='fr']]Ce scénario illustratif compare la performance du modèle A avec celle du modèle B.[[/lang]]
+</p>
 
-<p>An Analysis of Deviance table can be performed to look at the fit of generalised linear models (GLMs). In brief, deviance is a measure of the difference between the actual values and the fitted model. Like in an ANOVA, an Analysis of Deviance gives a residual deviance - this is  the variability that is not accounted for in the model. Therefore, a smaller residual deviance is preferable when fitting a model.</p>
+<p>
+[[lang code='en,other']]
+An Analysis of Deviance table can be performed to look at the fit of generalised linear models (GLMs). In brief, deviance is a measure of the difference between the actual values and the fitted model. Like in an ANOVA, an Analysis of Deviance gives a residual deviance - this is the variability that is not accounted for in the model. Therefore, a smaller residual deviance is preferable when fitting a model.
+[[/lang]]
+[[lang code='fr']]
+Un tableau d’analyse de la déviance peut être utilisé pour examiner l’ajustement de modèles linéaires généralisés (GLM). En bref, la déviance mesure l’écart entre les valeurs observées et le modèle ajusté. Comme dans une ANOVA, une analyse de la déviance donne une déviance résiduelle : il s’agit de la variabilité qui n’est pas expliquée par le modèle. Ainsi, une déviance résiduelle plus faible est préférable lors de l’ajustement d’un modèle.
+[[/lang]]
+</p>
 
 <br>
 
 <table>
-    <tbody><tr>
-        <td width="180px" style="padding:5px"><b>Model A:</b></td>
-        <td width="100px"></td>
-        <td width="100px"></td>
-        <td width="50px"></td>
-        <td width="180px" style="padding:5px"><b>Model B:</b></td>
-        <td width="100px"></td>
-        <td width="100px"></td>
-    </tr>
+<tbody>
+<tr>
+<td width="180px" style="padding:5px"><b>Model A:</b></td>
+<td width="100px"></td>
+<td width="100px"></td>
+<td width="50px"></td>
+<td width="180px" style="padding:5px"><b>Model B:</b></td>
+<td width="100px"></td>
+<td width="100px"></td>
+</tr>
 
-    <tr>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>Source of Deviation</b></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>DF</b></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>Deviance</b></td>
-        <td></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>Source of Deviation</b></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>DF</b></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>Deviance</b></td>
-    </tr>
+<tr>
+<td style="border:1px solid black; padding:5px"><b>[[lang code='en,other']]Source of Deviance[[/lang]][[lang code='fr']]Source de déviance[[/lang]]</b></td>
+<td style="border:1px solid black; padding:5px"><b>DF</b></td>
+<td style="border:1px solid black; padding:5px"><b>[[lang code='en,other']]Deviance[[/lang]][[lang code='fr']]Déviance[[/lang]]</b></td>
+<td></td>
+<td style="border:1px solid black; padding:5px"><b>[[lang code='en,other']]Source of Deviance[[/lang]][[lang code='fr']]Source de déviance[[/lang]]</b></td>
+<td style="border:1px solid black; padding:5px"><b>DF</b></td>
+<td style="border:1px solid black; padding:5px"><b>[[lang code='en,other']]Deviance[[/lang]][[lang code='fr']]Déviance[[/lang]]</b></td>
+</tr>
 
-    <tr>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">Accounted for</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_df_accounted@}</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_dev_accounted@}</td>
-        <td></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">Accounted for</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_df_accounted@}</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_dev_accounted@}</td>
-    </tr>
+<tr>
+<td style="border:1px solid black; padding:5px">[[lang code='en,other']]Accounted for[[/lang]][[lang code='fr']]Expliquée[[/lang]]</td>
+<td style="border:1px solid black; padding:5px">{@modA_df_accounted@}</td>
+<td style="border:1px solid black; padding:5px">{@modA_dev_accounted@}</td>
+<td></td>
+<td style="border:1px solid black; padding:5px">[[lang code='en,other']]Accounted for[[/lang]][[lang code='fr']]Expliquée[[/lang]]</td>
+<td style="border:1px solid black; padding:5px">{@modB_df_accounted@}</td>
+<td style="border:1px solid black; padding:5px">{@modB_dev_accounted@}</td>
+</tr>
 
-    <tr>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">Residual</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_df_residual@}</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_dev_residual@}</td>
-        <td></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">Residual</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_df_residual@}</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_dev_residual@}</td>
-    </tr>
+<tr>
+<td style="border:1px solid black; padding:5px">[[lang code='en,other']]Residual[[/lang]][[lang code='fr']]Résiduelle[[/lang]]</td>
+<td style="border:1px solid black; padding:5px">{@modA_df_residual@}</td>
+<td style="border:1px solid black; padding:5px">{@modA_dev_residual@}</td>
+<td></td>
+<td style="border:1px solid black; padding:5px">[[lang code='en,other']]Residual[[/lang]][[lang code='fr']]Résiduelle[[/lang]]</td>
+<td style="border:1px solid black; padding:5px">{@modB_df_residual@}</td>
+<td style="border:1px solid black; padding:5px">{@modB_dev_residual@}</td>
+</tr>
 
-    <tr>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">Total</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_df_total@}</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_dev_total@}</td>
-        <td></td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">Total</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_df_total@}</td>
-        <td style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_dev_total@}</td>
-    </tr>
-</tbody></table>
+<tr>
+<td style="border:1px solid black; padding:5px">Total</td>
+<td style="border:1px solid black; padding:5px">{@modA_df_total@}</td>
+<td style="border:1px solid black; padding:5px">{@modA_dev_total@}</td>
+<td></td>
+<td style="border:1px solid black; padding:5px">Total</td>
+<td style="border:1px solid black; padding:5px">{@modB_df_total@}</td>
+<td style="border:1px solid black; padding:5px">{@modB_dev_total@}</td>
+</tr>
+</tbody>
+</table>
 
 <br>
 
-<p>1. Which is the correct model?</p>
+<p>1. [[lang code='en,other']]Which is the correct model?[[/lang]][[lang code='fr']]Quel est le modèle correct ?[[/lang]]</p>
 <p>[[input:ans1]] [[validation:ans1]]</p>
 <p>[[feedback:prt1]]</p>
 
 <br>
 
-<p>2. Given the information you have, which model accounts for more variability out of A and B?</p>
+<p>2. [[lang code='en,other']]Given the information you have, which model accounts for more variability out of A and B?[[/lang]][[lang code='fr']]D’après les informations disponibles, lequel des modèles A et B explique le plus de variabilité ?[[/lang]]</p>
 <p>[[input:ans2]] [[validation:ans2]]</p>
 <p>[[feedback:prt2]]</p>
 
 <br>
 
-<p>3. We now use the Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) to compare these models. In both cases, a model with a lower AIC or BIC value is said to perform better.</p>
+<p>
+[[lang code='en,other']]
+3. We now use the Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) to compare these models. In both cases, a model with a lower AIC or BIC value is said to perform better.
+[[/lang]]
+[[lang code='fr']]
+3. Nous utilisons maintenant le critère d’information d’Akaike (AIC) et le critère d’information bayésien (BIC) pour comparer ces modèles. Dans les deux cas, on considère qu’un modèle ayant une valeur AIC ou BIC plus faible est plus performant.
+[[/lang]]
+</p>
 
 <table>
-    <tbody><tr>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>Model</b></td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>Parameters</b></td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>AIC</b></td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px"><b>BIC</b></td>
-    </tr>
-    <tr>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">A</td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_param@}</td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_AIC@}</td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modA_BIC@}</td>
-    </tr>
-    <tr>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">B</td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_param@}</td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_AIC@}</td>
-        <td width="100px" style="border: 1px solid black; border-collapse: collapse; padding:5px">{@modB_BIC@}</td>
-    </tr>
-</tbody></table>
+<tbody>
+<tr>
+<td width="100px" style="border:1px solid black; padding:5px"><b>[[lang code='en,other']]Model[[/lang]][[lang code='fr']]Modèle[[/lang]]</b></td>
+<td width="100px" style="border:1px solid black; padding:5px"><b>[[lang code='en,other']]Parameters[[/lang]][[lang code='fr']]Paramètres[[/lang]]</b></td>
+<td width="100px" style="border:1px solid black; padding:5px"><b>AIC</b></td>
+<td width="100px" style="border:1px solid black; padding:5px"><b>BIC</b></td>
+</tr>
+<tr>
+<td style="border:1px solid black; padding:5px">A</td>
+<td style="border:1px solid black; padding:5px">{@modA_param@}</td>
+<td style="border:1px solid black; padding:5px">{@modA_AIC@}</td>
+<td style="border:1px solid black; padding:5px">{@modA_BIC@}</td>
+</tr>
+<tr>
+<td style="border:1px solid black; padding:5px">B</td>
+<td style="border:1px solid black; padding:5px">{@modB_param@}</td>
+<td style="border:1px solid black; padding:5px">{@modB_AIC@}</td>
+<td style="border:1px solid black; padding:5px">{@modB_BIC@}</td>
+</tr>
+</tbody>
+</table>
 
 <br>
 
-<p>Which model performs better out of A and B?</p>
+<p>[[lang code='en,other']]Which model performs better out of A and B?[[/lang]][[lang code='fr']]Lequel des modèles A et B est le plus performant ?[[/lang]]</p>
 <p>[[input:ans3]] [[validation:ans3]]</p>
 <p>[[feedback:prt3]]</p>]]></text>
     </questiontext>
@@ -120,7 +158,7 @@
     <hidden>0</hidden>
     <idnumber/>
     <stackversion>
-      <text>2023060500</text>
+      <text>2026010500</text>
     </stackversion>
     <questionvariables>
       <text><![CDATA[modA_df_accounted: 7;
@@ -145,28 +183,29 @@ modB_AIC: 12951;
 modB_BIC: 13106;
 
 m_ans1: [
-    ["A", false],
-    ["B", false],
-    ["Neither", true]
+  [castext("[[lang code='en,other']]A[[/lang]][[lang code='fr']]A[[/lang]]"), false],
+  [castext("[[lang code='en,other']]B[[/lang]][[lang code='fr']]B[[/lang]]"), false],
+  [castext("[[lang code='en,other']]Neither[[/lang]][[lang code='fr']]Ni l'un ni l'autre[[/lang]]"), true]
 ];
 
 m_ans2: [
-    ["A", false],
-    ["B", true],
-    ["It depends", false]
+  [castext("[[lang code='en,other']]A[[/lang]][[lang code='fr']]A[[/lang]]"), false],
+  [castext("[[lang code='en,other']]B[[/lang]][[lang code='fr']]B[[/lang]]"), true],
+  [castext("[[lang code='en,other']]It depends[[/lang]][[lang code='fr']]Cela dépend[[/lang]]"), false]
 ];
 
 m_ans3: [
-    ["A", false],
-    ["B", false],
-    ["It depends", true]
-];]]></text>
+  [castext("[[lang code='en,other']]A[[/lang]][[lang code='fr']]A[[/lang]]"), false],
+  [castext("[[lang code='en,other']]B[[/lang]][[lang code='fr']]B[[/lang]]"), false],
+  [castext("[[lang code='en,other']]It depends[[/lang]][[lang code='fr']]Cela dépend[[/lang]]"), true]
+];
+]]></text>
     </questionvariables>
     <specificfeedback format="html">
       <text/>
     </specificfeedback>
     <questionnote format="moodle_auto_format">
-      <text/>
+      <text>Static</text>
     </questionnote>
     <questiondescription format="html">
       <text><![CDATA[<p id="author">Dan Kelly</p>
@@ -263,7 +302,7 @@ m_ans3: [
         <description>check correct answer</description>
         <answertest>AlgEquiv</answertest>
         <sans>ans1</sans>
-        <tans><![CDATA["Neither"]]></tans>
+        <tans>mcq_correct(m_ans1)[1]</tans>
         <testoptions/>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
@@ -273,7 +312,16 @@ m_ans3: [
         <trueanswernote>prt1-1-T</trueanswernote>
         <truefeedback format="html">
           <text><![CDATA[<p>Great! We asked for the <b>correct</b> model. But, no model is correct.
-<br>Let’s rephrase.</p>]]></text>
+<br>Let’s rephrase.</p><p>
+[[lang code='en,other']]
+Great! We asked for the <b>correct</b> model. But, no model is correct.
+<br>Let's rephrase.
+[[/lang]]
+[[lang code='fr']]
+Bravo! Nous avons demandé quel était le modèle <b>correct</b>. Or, aucun modèle n'est correct.
+<br>Reformulons la question.
+[[/lang]]
+</p>]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -281,8 +329,16 @@ m_ans3: [
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt1-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text><![CDATA[<p>Nice try! But, we asked for the <b>correct</b> model. However, no model is correct.
-<br>Let’s rephrase.</p>]]></text>
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+Nice try! But, we asked for the <b>correct</b> model. However, no model is correct.
+<br>Let's rephrase.
+[[/lang]]
+[[lang code='fr']]
+Bien essayé! Nous avons demandé quel était le modèle <b>correct</b>. Cependant, aucun modèle n'est correct.
+<br>Reformulons la question.
+[[/lang]]
+</p>]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -299,7 +355,7 @@ m_ans3: [
         <description>check correct answer</description>
         <answertest>AlgEquiv</answertest>
         <sans>ans2</sans>
-        <tans><![CDATA["B"]]></tans>
+        <tans>mcq_correct(m_ans2)[1]</tans>
         <testoptions/>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
@@ -308,7 +364,14 @@ m_ans3: [
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt2-1-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>The residual deviance is <b>smaller</b> in model B than in model A, so model B accounts for more variability than A.</p>]]></text>
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+The residual deviance is <b>smaller</b> in model B than in model A, so model B accounts for more variability than A.
+[[/lang]]
+[[lang code='fr']]
+La déviance résiduelle est <b>plus faible</b> pour le modèle B que pour le modèle A ; le modèle B explique donc une plus grande part de la variabilité que le modèle A.
+[[/lang]]
+</p>]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -333,8 +396,16 @@ m_ans3: [
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt2-2-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>Not quite, we want the model with the <b>smallest</b> residual deviance. 
-<br>We can see that model B has a smaller residual deviance than model A. This means that more variability is accounted for in model B.</p>]]></text>
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+Not quite, we want the model with the <b>smallest</b> residual deviance.
+<br>We can see that model B has a smaller residual deviance than model A. This means that more variability is accounted for in model B.
+[[/lang]]
+[[lang code='fr']]
+Pas tout à fait. Nous recherchons le modèle ayant la <b>plus faible</b> déviance résiduelle.
+<br>Nous pouvons constater que le modèle B présente une déviance résiduelle plus faible que le modèle A. Cela signifie qu'il explique une plus grande part de la variabilité.
+[[/lang]]
+</p>]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -342,8 +413,16 @@ m_ans3: [
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt2-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text><![CDATA[<p>Not quite, the deviance is a measure of variability, and here the residual deviance is <b>smaller</b> in model B than in model A. 
-<br>Hence, Model B accounts for more variability than A.</p>]]></text>
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+Not quite, the deviance is a measure of variability, and here the residual deviance is <b>smaller</b> in model B than in model A.
+<br>Hence, Model B accounts for more variability than A.
+[[/lang]]
+[[lang code='fr']]
+Pas tout à fait. La déviance est une mesure de la variabilité et, ici, la déviance résiduelle est <b>plus faible</b> pour le modèle B que pour le modèle A.
+<br>Par conséquent, le modèle B explique une plus grande part de la variabilité que le modèle A.
+[[/lang]]
+</p>]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -360,7 +439,7 @@ m_ans3: [
         <description>check correct answer</description>
         <answertest>AlgEquiv</answertest>
         <sans>ans3</sans>
-        <tans><![CDATA["It depends"]]></tans>
+        <tans>mcq_correct(m_ans3)[1]</tans>
         <testoptions/>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
@@ -369,61 +448,243 @@ m_ans3: [
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt3-1-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>Which measure is the one to use here depends on your research question:
-    <br>Is it better to account for more variability, or to account for variability more efficiently? This is the difference between AIC and BIC.
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+Which measure is the one to use here depends on your research question:
+<br>Is it better to account for more variability, or to account for variability more efficiently? This is the difference between AIC and BIC.
+[[/lang]]
+[[lang code='fr']]
+Le choix de la mesure à utiliser dépend de votre question de recherche.
+<br>Est-il préférable d'expliquer davantage de variabilité, ou d'expliquer la variabilité de manière plus efficace ? C'est la différence entre les critères AIC et BIC.
+[[/lang]]
 </p>
+
 <br>
-<p>We have two different model comparisons, AIC and BIC. These categorise models differently because they are prioritising different things.</p>
-<p>We shouldn’t always use one comparison method over the other, but rather use the approach that makes more sense in the context: This comes back to the objectives on what is the best approach to compare models. Whether it is good or not, is whether it is useful for your research objectives.</p>
-<p>In this particular case, the author states that 
-“In this context, a suitable model is being regarded as the model that explains more variability but with less complexity.”</p>
-<p>In other words, they favour BIC over AIC, so, in their context, they prefer Model A over B.</p>
-<p>While the statistical model is important for publication, the choice of model often makes little difference in terms of interpretation.</p><em>
 
-For more information, if you are interested:<br></em>Some model comparison metrics define a better model as one that accounts for more variability, this is like seen with AIC. In this instance, Model B outperforms Model A. 
+<p>
+[[lang code='en,other']]
+We have two different model comparisons, AIC and BIC. These categorise models differently because they are prioritising different things.
+[[/lang]]
+[[lang code='fr']]
+Nous disposons de deux critères de comparaison des modèles, l'AIC et le BIC. Ils peuvent conduire à des classements différents, car ils privilégient des aspects différents.
+[[/lang]]
+</p>
 
-Some model comparison metrics define a better model as one that accounts for variability efficiently, that is, with fewer parameters. This is like seen with the second method using BIC. 
+<p>
+[[lang code='en,other']]
+We shouldn’t always use one comparison method over the other, but rather use the approach that makes more sense in the context. This comes back to the objectives on what is the best approach to compare models. Whether it is good or not, is whether it is useful for your research objectives.
+[[/lang]]
+[[lang code='fr']]
+Il ne faut pas toujours privilégier une méthode de comparaison plutôt qu'une autre ; il convient de choisir celle qui est la plus adaptée au contexte. Le choix dépend des objectifs poursuivis et de la manière la plus pertinente de comparer les modèles. Un modèle est jugé « bon » s'il répond utilement aux objectifs de la recherche.
+[[/lang]]
+</p>
 
-BIC penalises more complexity in a model (that is, models with more parameters - including interactions) more than AIC. Hence, the BIC suggests that Model A outperforms Model B.]]></text>
+<p>
+[[lang code='en,other']]
+In this particular case, the author states that
+<br>
+“In this context, a suitable model is being regarded as the model that explains more variability but with less complexity.”
+[[/lang]]
+[[lang code='fr']]
+Dans ce cas particulier, l'auteur indique que :
+<br>
+« Dans ce contexte, un modèle approprié est celui qui explique davantage de variabilité tout en restant le moins complexe possible. »
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+In other words, they favour BIC over AIC, so, in their context, they prefer Model A over B.
+[[/lang]]
+[[lang code='fr']]
+Autrement dit, l'auteur privilégie le BIC plutôt que l'AIC et, dans ce contexte, préfère donc le modèle A au modèle B.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+While the statistical model is important for publication, the choice of model often makes little difference in terms of interpretation.
+[[/lang]]
+[[lang code='fr']]
+Bien que le choix du modèle statistique soit important dans le cadre d'une publication, il a souvent peu d'incidence sur l'interprétation des résultats.
+[[/lang]]
+</p>
+
+<p><em>
+[[lang code='en,other']]
+For more information, if you are interested:
+[[/lang]]
+[[lang code='fr']]
+Pour aller plus loin :
+[[/lang]]
+</em></p>
+
+<p>
+[[lang code='en,other']]
+Some model comparison metrics define a better model as one that accounts for more variability; this is the case with AIC. In this example, Model B outperforms Model A.
+[[/lang]]
+[[lang code='fr']]
+Certains critères de comparaison considèrent qu'un meilleur modèle est celui qui explique davantage de variabilité ; c'est l'approche de l'AIC. Dans cet exemple, le modèle B est donc préféré au modèle A.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+Some model comparison metrics define a better model as one that accounts for variability efficiently, that is, with fewer parameters. This is the case with BIC.
+[[/lang]]
+[[lang code='fr']]
+D'autres critères privilégient un modèle qui explique efficacement la variabilité, c'est-à-dire avec un nombre plus faible de paramètres. C'est le principe du BIC.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+BIC penalises more complexity in a model (that is, models with more parameters—including interactions) more than AIC. Hence, the BIC suggests that Model A outperforms Model B.
+[[/lang]]
+[[lang code='fr']]
+Le BIC pénalise davantage la complexité des modèles (c'est-à-dire les modèles comportant plus de paramètres, y compris les interactions) que l'AIC. Il conduit donc à privilégier le modèle A plutôt que le modèle B.
+[[/lang]]
+</p>]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
         <falsepenalty/>
-        <falsenextnode>1</falsenextnode>
+        <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt3-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
-        </falsefeedback>
-      </node>
-      <node>
-        <name>1</name>
-        <description>feedback for incorrect answers</description>
-        <answertest>AlgEquiv</answertest>
-        <sans>ans3</sans>
-        <tans><![CDATA["A"]]></tans>
-        <testoptions/>
-        <quiet>0</quiet>
-        <truescoremode>+</truescoremode>
-        <truescore>0</truescore>
-        <truepenalty/>
-        <truenextnode>-1</truenextnode>
-        <trueanswernote>prt3-2-T</trueanswernote>
-        <truefeedback format="html">
-          <text><![CDATA[<p>That could be correct but it depends on the research question. Is it more important to account for more variability or to account for variability more efficiently?
-<br>The smaller AIC value suggests that Model B outperforms A. But, the smaller BIC value suggests that Model A outperforms B.
-<br>Whether we want to use AIC or BIC is unknown here <b>since the research objectives have not been stated in the question</b>.</p><p><br></p><p></p><p>We have two different model comparisons, AIC and BIC. These categorise models differently because they are prioritising different things.</p><p>We shouldn’t always use one comparison method over the other, but rather use the approach that makes more sense in the context: This comes back to the objectives on what is the best approach to compare models. Whether it is good or not, is whether it is useful for your research objectives.</p><p>In this particular case, the author states that “In this context, a suitable model is being regarded as the model that explains more variability but with less complexity.”</p><p>In other words, they favour BIC over AIC, so, in their context, they prefer Model A over B.</p><p>While the statistical model is important for publication, the choice of model often makes little difference in terms of interpretation.</p><em>For more information, if you are interested:<br></em>Some model comparison metrics define a better model as one that accounts for more variability, this is like seen with AIC. In this instance, Model B outperforms Model A. Some model comparison metrics define a better model as one that accounts for variability efficiently, that is, with fewer parameters. This is like seen with the second method using BIC. BIC penalises more complexity in a model (that is, models with more parameters - including interactions) more than AIC. Hence, the BIC suggests that Model A outperforms Model B.<br><p></p>]]></text>
-        </truefeedback>
-        <falsescoremode>-</falsescoremode>
-        <falsescore>0</falsescore>
-        <falsepenalty/>
-        <falsenextnode>-1</falsenextnode>
-        <falseanswernote>prt3-2-F</falseanswernote>
-        <falsefeedback format="html">
-          <text><![CDATA[<p>That could be correct but it depends on the research question. Is it more important to account for more variability or to account for variability more efficiently?
-<br>The smaller AIC value suggests that Model B outperforms A. But, the smaller BIC value suggests that Model A outperforms B.
-<br>Whether we want to use AIC or BIC is unknown here <b>since the research objectives have not been stated in the question</b>.</p><p><br></p><p></p><p>We have two different model comparisons, AIC and BIC. These categorise models differently because they are prioritising different things.</p><p>We shouldn’t always use one comparison method over the other, but rather use the approach that makes more sense in the context: This comes back to the objectives on what is the best approach to compare models. Whether it is good or not, is whether it is useful for your research objectives.</p><p>In this particular case, the author states that “In this context, a suitable model is being regarded as the model that explains more variability but with less complexity.”</p><p>In other words, they favour BIC over AIC, so, in their context, they prefer Model A over B.</p><p>While the statistical model is important for publication, the choice of model often makes little difference in terms of interpretation.</p><em>For more information, if you are interested:<br></em>Some model comparison metrics define a better model as one that accounts for more variability, this is like seen with AIC. In this instance, Model B outperforms Model A. Some model comparison metrics define a better model as one that accounts for variability efficiently, that is, with fewer parameters. This is like seen with the second method using BIC. BIC penalises more complexity in a model (that is, models with more parameters - including interactions) more than AIC. Hence, the BIC suggests that Model A outperforms Model B.<br><p></p>]]></text>
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+That could be correct, but it depends on the research question. Is it more important to account for more variability or to account for variability more efficiently?
+<br>The smaller AIC value suggests that Model B outperforms A. However, the smaller BIC value suggests that Model A outperforms B.
+<br>Whether we should use AIC or BIC is unknown here <b>because the research objectives have not been stated in the question</b>.
+[[/lang]]
+[[lang code='fr']]
+Cette réponse pourrait être correcte, mais cela dépend de la question de recherche. Est-il plus important d'expliquer davantage de variabilité ou d'expliquer la variabilité de manière plus efficace ?
+<br>La valeur plus faible de l'AIC suggère que le modèle B est préférable au modèle A. En revanche, la valeur plus faible du BIC suggère que le modèle A est préférable au modèle B.
+<br>Nous ne pouvons pas déterminer s'il convient d'utiliser l'AIC ou le BIC <b>car les objectifs de la recherche ne sont pas précisés dans l'énoncé</b>.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+We have two different model comparisons, AIC and BIC. These categorise models differently because they are prioritising different things.
+[[/lang]]
+[[lang code='fr']]
+Nous disposons de deux critères de comparaison des modèles, l'AIC et le BIC. Ils peuvent conduire à des classements différents, car ils privilégient des aspects différents.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+We shouldn’t always use one comparison method over the other, but rather use the approach that makes more sense in the context. This comes back to the objectives on what is the best approach to compare models. Whether it is good or not depends on whether it is useful for your research objectives.
+[[/lang]]
+[[lang code='fr']]
+Il ne faut pas toujours privilégier une méthode de comparaison plutôt qu'une autre ; il convient de choisir celle qui est la plus adaptée au contexte. Le choix dépend des objectifs poursuivis et de la manière la plus pertinente de comparer les modèles. Un modèle est jugé « bon » s'il répond utilement aux objectifs de la recherche.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+In this particular case, the author states that:
+<br>
+“In this context, a suitable model is being regarded as the model that explains more variability but with less complexity.”
+[[/lang]]
+[[lang code='fr']]
+Dans ce cas particulier, l'auteur indique que :
+<br>
+« Dans ce contexte, un modèle approprié est celui qui explique davantage de variabilité tout en restant le moins complexe possible. »
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+In other words, they favour BIC over AIC, so, in their context, they prefer Model A over B.
+[[/lang]]
+[[lang code='fr']]
+Autrement dit, l'auteur privilégie le BIC plutôt que l'AIC et, dans ce contexte, préfère le modèle A au modèle B.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+While the statistical model is important for publication, the choice of model often makes little difference in terms of interpretation.
+[[/lang]]
+[[lang code='fr']]
+Bien que le choix du modèle statistique soit important dans le cadre d'une publication, il a souvent peu d'incidence sur l'interprétation des résultats.
+[[/lang]]
+</p>
+
+<p><em>
+[[lang code='en,other']]
+For more information, if you are interested:
+[[/lang]]
+[[lang code='fr']]
+Pour aller plus loin :
+[[/lang]]
+</em></p>
+
+<p>
+[[lang code='en,other']]
+Some model comparison metrics define a better model as one that accounts for more variability; this is the case with AIC. In this example, Model B outperforms Model A.
+[[/lang]]
+[[lang code='fr']]
+Certains critères de comparaison considèrent qu'un meilleur modèle est celui qui explique davantage de variabilité ; c'est le cas de l'AIC. Dans cet exemple, le modèle B est donc préféré au modèle A.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+Some model comparison metrics define a better model as one that accounts for variability efficiently, that is, with fewer parameters. This is the case with BIC.
+[[/lang]]
+[[lang code='fr']]
+D'autres critères privilégient un modèle qui explique efficacement la variabilité, c'est-à-dire avec un nombre plus faible de paramètres. C'est le principe du BIC.
+[[/lang]]
+</p>
+
+<p>
+[[lang code='en,other']]
+BIC penalises more complexity in a model (that is, models with more parameters—including interactions) more than AIC. Hence, the BIC suggests that Model A outperforms Model B.
+[[/lang]]
+[[lang code='fr']]
+Le BIC pénalise davantage la complexité des modèles (c'est-à-dire les modèles comportant plus de paramètres, y compris les interactions) que l'AIC. Il conduit donc à privilégier le modèle A plutôt que le modèle B.
+[[/lang]]
+</p>]]></text>
         </falsefeedback>
       </node>
     </prt>
+    <qtest>
+      <testcase>1</testcase>
+      <description>Test case assuming the teacher's input gets full marks.</description>
+      <testinput>
+        <name>ans1</name>
+        <value>first(mcq_correct(m_ans1))</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>first(mcq_correct(m_ans2))</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_correct(m_ans3))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
   </question>
 </quiz>
