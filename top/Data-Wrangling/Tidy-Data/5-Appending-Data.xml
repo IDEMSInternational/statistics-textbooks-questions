@@ -5,86 +5,147 @@
       <text>5: Appending Data</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>Rainfall data were taken in two regions in Ghana: Elamat and Palstond. However, the data has been collected into two data frames: one contains data from 1990-1999, and the other from 2000-2016.</p>
+      <text><![CDATA[<p>
+[[lang code='en,other']]
+Rainfall data were taken in two regions in Ghana: Elamat and Palstond. However, the data have been collected into two data frames: one contains data from 1990–1999, and the other from 2000–2016.
+[[/lang]]
+[[lang code='fr']]
+Des données de précipitations ont été relevées dans deux régions du Ghana : Elamat et Palstond. Cependant, les données ont été regroupées dans deux tableaux de données : l’un contient les données de 1990 à 1999, et l’autre celles de 2000 à 2016.
+[[/lang]]
+</p>
 
-<p>The former data set contains the station name, the date, year, rainfall (mm), minimum temperature (Celsius), and maximum temperature (Celsius).</p>
+<p>
+[[lang code='en,other']]
+The former data set contains the station name, date, year, rainfall (mm), minimum temperature (Celsius), and maximum temperature (Celsius).
+[[/lang]]
+[[lang code='fr']]
+Le premier jeu de données contient le nom de la station, la date, l’année, les précipitations (mm), la température minimale (en degrés Celsius) et la température maximale (en degrés Celsius).
+[[/lang]]
+</p>
 
-<p>The latter data set contains the station name, date, year, rainfall (cm), minimum temperature (Celsius), and maximum temperature (Celsius), and hours of sunshine.</p>
+<p>
+[[lang code='en,other']]
+The latter data set contains the station name, date, year, rainfall (cm), minimum temperature (Celsius), maximum temperature (Celsius), and hours of sunshine.
+[[/lang]]
+[[lang code='fr']]
+Le second jeu de données contient le nom de la station, la date, l’année, les précipitations (cm), la température minimale (en degrés Celsius), la température maximale (en degrés Celsius) et le nombre d’heures d’ensoleillement.
+[[/lang]]
+</p>
 
-<p>The task is to combine the data sets and answer the following questions:
-<br><em>(Note that this is “made up” data)</em></p>
+<p>
+[[lang code='en,other']]
+The task is to combine the data sets and answer the following questions:
+<br><em>(Note that these are made-up data.)</em>
+[[/lang]]
+[[lang code='fr']]
+L’objectif est de combiner les deux jeux de données et de répondre aux questions suivantes :
+<br><em>(Remarque : ces données sont fictives.)</em>
+[[/lang]]
+</p>
 
-<p><button onclick="exportToCsv1990()">Download Data: 1990-1999</button></p>
-<p><button onclick="exportToCsv2000()">Download Data: 2000-2016</button></p>
+<p>
+  <button type="button"
+          class="btn btn-primary"
+          onclick="downloadDataset(
+            'https://raw.githubusercontent.com/IDEMSInternational/statistics-textbooks-questions/refs/heads/master/question-datasets/ghana-1990-1999.csv',
+            'ghana-1990-1999.csv'
+          )">
+    [[lang code='en,other']]Download Data: 1990–1999[[/lang]]
+    [[lang code='fr']]Télécharger les données : 1990–1999[[/lang]]
+  </button>
+</p>
+
+<p>
+  <button type="button"
+          class="btn btn-primary"
+          onclick="downloadDataset(
+            'https://raw.githubusercontent.com/IDEMSInternational/statistics-textbooks-questions/refs/heads/master/question-datasets/ghana-2000-2016.csv',
+            'ghana-2000-2016.csv'
+          )">
+    [[lang code='en,other']]Download Data: 2000–2016[[/lang]]
+    [[lang code='fr']]Télécharger les données : 2000–2016[[/lang]]
+  </button>
+</p>
 
 <br>
 
-<p>1. Which year had the least overall rainfall?</p>
+<p>
+[[lang code='en,other']]
+1. Which year had the least overall rainfall?
+[[/lang]]
+[[lang code='fr']]
+1. Quelle année a enregistré le plus faible total de précipitations ?
+[[/lang]]
+</p>
+
 <p>[[input:ans1]] [[validation:ans1]]</p>
 
 <br>
 
-<p>2. Which region had more rainfall between 1990-2016 (inclusive)?</p>
+<p>
+[[lang code='en,other']]
+2. Which region had more rainfall between 1990 and 2016, inclusive?
+[[/lang]]
+[[lang code='fr']]
+2. Quelle région a enregistré le plus de précipitations entre 1990 et 2016 inclus ?
+[[/lang]]
+</p>
+
 <p>[[input:ans2]] [[validation:ans2]]</p>
 
 <br>
 
-<p>3. How much rainfall was there in total across both stations in 2016 in \(mm\)?</p>
-<br><em>Give your answer to 2 decimal places.</em></p>
+<p>
+[[lang code='en,other']]
+3. How much rainfall was there in total across both stations in 2016, in \(mm\)?
+<br><em>Give your answer to 2 decimal places.</em>
+[[/lang]]
+[[lang code='fr']]
+3. Quelle quantité totale de précipitations a été enregistrée dans les deux stations en 2016, en \(mm\) ?
+<br><em>Donnez votre réponse avec 2 décimales.</em>
+[[/lang]]
+</p>
+
 <p>[[input:ans3]] [[validation:ans3]]</p>
 <p>[[feedback:prt1]]</p>
 
 <script>
-var Results1990;
-var Results2000;
+async function downloadDataset(url, filename) {
+    try {
+        const response = await fetch(url);
 
-fetch("https://raw.githubusercontent.com/IDEMSInternational/wxmaxima-stack/main/data-files/ghana-1990-1999.txt")
-  .then(res => res.json())
-  .then(data => {
-    Results1990 = data;
-   })
-fetch("https://raw.githubusercontent.com/IDEMSInternational/wxmaxima-stack/main/data-files/ghana-2000-2016.txt")
-  .then(res => res.json())
-  .then(data => {
-    Results2000 = data;
-   })
+        if (!response.ok) {
+            throw new Error(
+                'The dataset could not be retrieved. HTTP status: ' +
+                response.status
+            );
+        }
 
-exportToCsv1990 = function(file_name) {
-  var CsvString = "";
-  Results1990.forEach(function(RowItem, RowIndex) {
-    RowItem.forEach(function(ColItem, ColIndex) {
-             CsvString += ColItem;
-             if( ColIndex < RowItem.length - 1){
-                 CsvString += ',';
-                } 
-    });
-    CsvString += "\r\n";
-  });
-  CsvString = "data:application/csv," + encodeURIComponent(CsvString);
- var x = document.createElement("A");
- x.setAttribute("href", CsvString );
- x.setAttribute("download","data_set.csv");
- document.body.appendChild(x);
- x.click();
-}
+        const blob = await response.blob();
+        const objectUrl = URL.createObjectURL(blob);
 
-exportToCsv2000 = function(file_name) {
-  var CsvString = "";
-  Results2000.forEach(function(RowItem, RowIndex) {
-    RowItem.forEach(function(ColItem, ColIndex) {
-             CsvString += ColItem;
-             if( ColIndex < RowItem.length - 1){
-                 CsvString += ',';
-                } 
-    });
-    CsvString += "\r\n";
-  });
-  CsvString = "data:application/csv," + encodeURIComponent(CsvString);
- var x = document.createElement("A");
- x.setAttribute("href", CsvString );
- x.setAttribute("download","data_set.csv");
- document.body.appendChild(x);
- x.click();
+        const downloadLink = document.createElement('a');
+        downloadLink.href = objectUrl;
+        downloadLink.download = filename;
+        downloadLink.style.display = 'none';
+
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        downloadLink.remove();
+
+        setTimeout(function () {
+            URL.revokeObjectURL(objectUrl);
+        }, 1000);
+    } catch (error) {
+        console.error(error);
+
+        alert(
+            'The file could not be downloaded automatically. ' +
+            'The dataset will now be opened in a new tab.'
+        );
+
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
 }
 </script>]]></text>
     </questiontext>
@@ -96,7 +157,7 @@ exportToCsv2000 = function(file_name) {
     <hidden>0</hidden>
     <idnumber/>
     <stackversion>
-      <text>2023060500</text>
+      <text>2026010500</text>
     </stackversion>
     <questionvariables>
       <text><![CDATA[ma1: [
@@ -237,13 +298,26 @@ node5_test: if ans1=1992 and ans2="Palstond" and member(ans3, [17567.7, 175677])
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt1-1-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>Great! It appears that when combining the data sets, you have taken into account the different units used!
-    <br>In addition, it seems that you have correctly appended the data sets together.
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+Great! It appears that when combining the data sets, you have taken into account the different units used!
+<br>In addition, it seems that you have correctly appended the data sets together.
+[[/lang]]
+[[lang code='fr']]
+Bravo ! Il semble que, lors de la combinaison des jeux de données, vous ayez bien tenu compte des différentes unités utilisées.
+<br>De plus, il semble que vous ayez correctement concaténé les deux jeux de données.
+[[/lang]]
 </p>
 
 <br>
 
-<p>There is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+<p>
+[[lang code='en,other']]
+There is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+[[/lang]]
+[[lang code='fr']]
+Une solution détaillée de cet exercice est disponible <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">ici</a>.
+[[/lang]]
 </p>]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
@@ -269,16 +343,34 @@ node5_test: if ans1=1992 and ans2="Palstond" and member(ans3, [17567.7, 175677])
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt1-2-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>It appears that when combining the data sets, you have not taken into account the different units used.
-    <br>Have a look at a plot of your rainfall by year. Does anything seem odd here?
-    <br>We mentioned in the initial question that rainfall is measured in cm in one data set and mm in another.
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+It appears that when combining the data sets, you have not taken into account the different units used.
+<br>Have a look at a plot of your rainfall by year. Does anything seem odd here?
+<br>We mentioned in the initial question that rainfall is measured in cm in one data set and mm in another.
+[[/lang]]
+[[lang code='fr']]
+Il semble que, lors de la combinaison des jeux de données, vous n'ayez pas tenu compte des différentes unités utilisées.
+<br>Examinez le graphique des précipitations par année. Remarquez-vous quelque chose d'inhabituel ?
+<br>Comme indiqué dans l'énoncé, les précipitations sont mesurées en cm dans un jeu de données et en mm dans l'autre.
+[[/lang]]
 </p>
 
 <br>
 
-<p style="margin-left:30px"><img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-1.jpg?raw=true"></p>
+<p style="margin-left:30px">
+  <img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-1.jpg?raw=true">
+</p>
+
 <br>
-<p>Try again, but if stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+
+<p>
+[[lang code='en,other']]
+Try again, but if you are stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+[[/lang]]
+[[lang code='fr']]
+Essayez à nouveau. Si vous êtes bloqué(e), une solution détaillée de cet exercice est disponible <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">ici</a>.
+[[/lang]]
 </p>]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
@@ -304,16 +396,35 @@ node5_test: if ans1=1992 and ans2="Palstond" and member(ans3, [17567.7, 175677])
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt1-3-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>It appears that when combining the data sets, you have taken into account the different units used, which is great!
-    <br>However, have a look at a plot of your rainfall by year with station included. Does anything seem odd here?
-    <br>All stations from the year 2000 are unknown. Have a look at the station variable name in the two initial data sets. Can you see why this might have happened when combining the data?
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+It appears that when combining the data sets, you have taken into account the different units used, which is great!
+<br>However, have a look at a plot of rainfall by year, including the station. Does anything seem odd here?
+<br>All stations from the year 2000 onwards are shown as unknown. Have a look at the station variable name in the two initial data sets. Can you see why this might have happened when combining the data?
+[[/lang]]
+[[lang code='fr']]
+Il semble que, lors de la combinaison des jeux de données, vous ayez bien tenu compte des différentes unités utilisées, ce qui est très bien !
+<br>Cependant, examinez un graphique des précipitations par année, en distinguant les stations. Remarquez-vous quelque chose d’inhabituel ?
+<br>À partir de l’année 2000, toutes les stations sont indiquées comme étant inconnues. Examinez le nom de la variable correspondant à la station dans les deux jeux de données initiaux. Comprenez-vous pourquoi cela a pu se produire lors de la combinaison des données ?
+[[/lang]]
 </p>
 
 <br>
 
-<p style="margin-left:30px"><img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-2.jpg?raw=true"></p>
+<p style="margin-left:30px">
+  <img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-2.jpg?raw=true"
+       alt="Plot of rainfall by year and station">
+</p>
+
 <br>
-<p>Try again, but if stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+
+<p>
+[[lang code='en,other']]
+Try again, but if you are stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+[[/lang]]
+[[lang code='fr']]
+Essayez à nouveau. Si vous êtes bloqué(e), une solution détaillée de cet exercice est disponible <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">ici</a>.
+[[/lang]]
 </p>]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
@@ -339,17 +450,37 @@ node5_test: if ans1=1992 and ans2="Palstond" and member(ans3, [17567.7, 175677])
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt1-4-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>It appears that when combining the data sets, you have not taken into account the order of the columns.
-    <br>Have a look at the data - the columns are in a different order in the two data sets.
-    <br>We can visualise this further by a plot of rainfall by year
-    <br>We want to put both of the data sheets together. For this we go to Prepare &gt; Data Reshape &gt; Append dialogue in R-Instat. We suggest having a look at the tutorial on merging and appending data in R-Instat.
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+It appears that when combining the data sets, you have not taken into account the order of the columns.
+<br>Have a look at the data: the columns are arranged in a different order in the two data sets.
+<br>This can be seen more clearly in a plot of rainfall by year.
+<br>We want to append the two data sheets. In R-Instat, go to <strong>Prepare &gt; Data Reshape &gt; Append</strong>. We suggest reviewing the tutorial on merging and appending data in R-Instat.
+[[/lang]]
+[[lang code='fr']]
+Il semble que, lors de la combinaison des jeux de données, vous n’ayez pas tenu compte de l’ordre des colonnes.
+<br>Examinez les données : les colonnes sont disposées dans un ordre différent dans les deux jeux de données.
+<br>Cela apparaît plus clairement dans un graphique des précipitations par année.
+<br>Nous souhaitons concaténer les deux feuilles de données. Dans R-Instat, allez dans <strong>Prepare &gt; Data Reshape &gt; Append</strong>. Nous vous conseillons de consulter le tutoriel sur la fusion et la concaténation de données dans R-Instat.
+[[/lang]]
 </p>
 
 <br>
 
-<p style="margin-left:30px"><img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-4.jpg?raw=true"></p>
+<p style="margin-left:30px">
+  <img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-4.jpg?raw=true"
+       alt="Plot showing the effect of appending columns in the wrong order">
+</p>
+
 <br>
-<p>Try again, but if stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+
+<p>
+[[lang code='en,other']]
+Try again, but if you are stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+[[/lang]]
+[[lang code='fr']]
+Essayez à nouveau. Si vous êtes bloqué(e), une solution détaillée de cet exercice est disponible <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">ici</a>.
+[[/lang]]
 </p>]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
@@ -375,17 +506,35 @@ node5_test: if ans1=1992 and ans2="Palstond" and member(ans3, [17567.7, 175677])
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt1-5-T</trueanswernote>
         <truefeedback format="html">
-          <text><![CDATA[<p>It appears that when combining the data sets, you have not taken into account the order of the columns.
-    <br>Have a look at the data - the columns are in a different order in the two data sets.
-    <br>We can visualise this further by a plot of rainfall by year
-    <br>We want to put both of the data sheets together. For this we go to Prepare &gt; Data Reshape &gt; Append dialogue in R-Instat. We suggest having a look at the tutorial on merging and appending data in R-Instat.
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+It appears that when combining the data sets, you have not taken into account the order of the columns.
+<br>Have a look at the data: the columns are arranged in a different order in the two data sets.
+<br>This can be seen more clearly in a plot of rainfall by year.
+<br>We want to append the two data sheets. In R-Instat, go to <strong>Prepare &gt; Data Reshape &gt; Append</strong>. We suggest reviewing the tutorial on merging and appending data in R-Instat.
+[[/lang]]
+[[lang code='fr']]
+Il semble que, lors de la combinaison des jeux de données, vous n’ayez pas tenu compte de l’ordre des colonnes.
+<br>Examinez les données : les colonnes sont disposées dans un ordre différent dans les deux jeux de données.
+<br>Cela apparaît plus clairement sur un graphique des précipitations par année.
+<br>Nous souhaitons concaténer les deux feuilles de données. Dans R-Instat, allez dans <strong>Prepare &gt; Data Reshape &gt; Append</strong>. Nous vous conseillons de consulter le tutoriel sur la fusion et la concaténation de données dans R-Instat.
+[[/lang]]
 </p>
 
 <br>
 
-<p style="margin-left:30px"><img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-3.jpg?raw=true"></p>
+<p style="margin-left:30px">
+  <img src="https://github.com/IDEMSInternational/wxmaxima-stack/blob/main/data-files/appending-data-3.jpg?raw=true"
+       alt="Plot showing the effect of appending columns in the wrong order">
+</p>
 
-<p>Try again, but if stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+<p>
+[[lang code='en,other']]
+Try again, but if you are stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+[[/lang]]
+[[lang code='fr']]
+Essayez à nouveau. Si vous êtes bloqué(e), une solution détaillée de cet exercice est disponible <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">ici</a>.
+[[/lang]]
 </p>]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
@@ -394,11 +543,26 @@ node5_test: if ans1=1992 and ans2="Palstond" and member(ans3, [17567.7, 175677])
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt1-5-F</falseanswernote>
         <falsefeedback format="html">
-          <text><![CDATA[<p>Not quite - are you looking at the <b>overall rainfall</b> for each year?
-    <br>We want to put both of the data sheets together. For this we go to Prepare &gt; Data Reshape &gt; Append dialogue in R-Instat. We suggest having a look at the tutorial on merging and appending data in R-Instat.
+          <text><![CDATA[<p>
+[[lang code='en,other']]
+Not quite&mdash;are you looking at the <b>overall rainfall</b> for each year?
+<br>We want to append the two data sheets. In R-Instat, go to <strong>Prepare &gt; Data Reshape &gt; Append</strong>. We suggest reviewing the tutorial on merging and appending data in R-Instat.
+[[/lang]]
+[[lang code='fr']]
+Pas tout à fait. Avez-vous bien pris en compte les <b>précipitations totales</b> pour chaque année ?
+<br>Nous souhaitons concaténer les deux feuilles de données. Dans R-Instat, allez dans <strong>Prepare &gt; Data Reshape &gt; Append</strong>. Nous vous conseillons de consulter le tutoriel sur la fusion et la concaténation de données dans R-Instat.
+[[/lang]]
 </p>
+
 <br>
-<p>Try again, but if stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+
+<p>
+[[lang code='en,other']]
+Try again, but if you are stuck there is a worked solution of this problem <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">here</a>.
+[[/lang]]
+[[lang code='fr']]
+Essayez à nouveau. Si vous êtes bloqué(e), une solution détaillée de cet exercice est disponible <a href="https://ecampus.idems.international/course/view.php?id=238&amp;section=97">ici</a>.
+[[/lang]]
 </p>]]></text>
         </falsefeedback>
       </node>
