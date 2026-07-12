@@ -5,52 +5,60 @@
       <text>9: Interpreting ANOVA</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>An experiment is conducted on {@plots@} plots to understand the effect of several factors on the yield of millet.</p>
-<p>The factors are: {@variety@} varieties of millet, {@weeding@} types of weeding and {@fert@} different levels of
-    fertiliser.</p>
-<p><b>Give the values to \(1\) decimal place.</b></p>
+      <text><![CDATA[<p>[[lang code="en"]]An experiment is conducted on {@plots@} plots to understand the effect of several factors on the yield of millet.[[/lang]]
+[[lang code="fr"]]Une expérience est réalisée sur {@plots@} parcelles afin d'étudier l'effet de plusieurs facteurs sur le rendement du millet.[[/lang]]</p>
+
+<p>[[lang code="en"]]The factors are: {@variety@} varieties of millet, {@weeding@} types of weeding and {@fert@} different levels of fertiliser.[[/lang]]
+[[lang code="fr"]]Les facteurs étudiés sont : {@variety@} variétés de millet, {@weeding@} types de désherbage et {@fert@} niveaux de fertilisation.[[/lang]]</p>
+
+<p><b>
+[[lang code="en"]]Give the values to \(1\) decimal place.[[/lang]]
+[[lang code="fr"]]Donnez les valeurs à \(1\) décimale près.[[/lang]]
+</b></p>
+
 <br>
+
 <table>
     <thead>
         <tr>
-            <th scope="col" width="100">Term</th>
-            <th scope="col" width="100">Df</th>
-            <th scope="col" width="100">Sum Sq</th>
-            <th scope="col" width="100">Mean Sq</th>
-            <th scope="col" width="100">F Value</th>
+            <th scope="col" width="100">[[lang code="en"]]Term[[/lang]][[lang code="fr"]]Terme[[/lang]]</th>
+            <th scope="col" width="100">[[lang code="en"]]Df[[/lang]][[lang code="fr"]]ddl[[/lang]]</th>
+            <th scope="col" width="100">[[lang code="en"]]Sum Sq[[/lang]][[lang code="fr"]]Somme des carrés[[/lang]]</th>
+            <th scope="col" width="100">[[lang code="en"]]Mean Sq[[/lang]][[lang code="fr"]]Carré moyen[[/lang]]</th>
+            <th scope="col" width="100">[[lang code="en"]]F Value[[/lang]][[lang code="fr"]]Valeur de F[[/lang]]</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Variety</td>
+            <td>[[lang code="en"]]Variety[[/lang]][[lang code="fr"]]Variété[[/lang]]</td>
             <td>{@variety_df@}<br></td>
             <td>{@variety_ss@}</td>
             <td>{@variety_ms@}</td>
             <td>{@variety_f@}</td>
         </tr>
         <tr>
-            <td>Weeding</td>
+            <td>[[lang code="en"]]Weeding[[/lang]][[lang code="fr"]]Désherbage[[/lang]]</td>
             <td>{@weeding_df@}<br></td>
             <td>{@weeding_ss@}</td>
             <td>{@weeding_ms@}</td>
             <td>{@weeding_f@}</td>
         </tr>
         <tr>
-            <td>Fertiliser</td>
+            <td>[[lang code="en"]]Fertiliser[[/lang]][[lang code="fr"]]Fertilisation[[/lang]]</td>
             <td>{@fert_df@}</td>
             <td>{@fert_ss@}</td>
             <td>{@fert_ms@}<br></td>
             <td>{@fert_f@}</td>
         </tr>
         <tr>
-            <td>Residuals</td>
+            <td>[[lang code="en"]]Residuals[[/lang]][[lang code="fr"]]Résidus[[/lang]]</td>
             <td>{@resid_df@}</td>
             <td>{@resid_ss@}</td>
             <td>{@resid_ms@}</td>
             <td></td>
         </tr>
         <tr>
-            <td>Total</td>
+            <td>[[lang code="en"]]Total[[/lang]][[lang code="fr"]]Total[[/lang]]</td>
             <td>{@total_df@}<br></td>
             <td>{@total_ss@}</td>
             <td></td>
@@ -58,10 +66,21 @@
         </tr>
     </tbody>
 </table>
+
 <br>
-<p>What percentage (to one decimal place) of variation in the yield is explained by differences in variety?</p>
+
+<p>
+[[lang code="en"]]What percentage (to one decimal place) of the variation in yield is explained by differences in variety?[[/lang]]
+[[lang code="fr"]]Quel pourcentage (à une décimale près) de la variation du rendement est expliqué par les différences entre les variétés ?[[/lang]]
+</p>
+
 <p>[[input:ans_variety]] [[validation:ans_variety]] [[feedback:prt1_variety]]</p>
-<p>What percentage (to one decimal place) of variation in the yield is not accounted for?</p>
+
+<p>
+[[lang code="en"]]What percentage (to one decimal place) of the variation in yield is not accounted for?[[/lang]]
+[[lang code="fr"]]Quel pourcentage (à une décimale près) de la variation du rendement n'est pas expliqué par le modèle ?[[/lang]]
+</p>
+
 <p>[[input:ans_unaccounted]] [[validation:ans_unaccounted]] [[feedback:prt1_unaccounted]]</p>]]></text>
     </questiontext>
     <generalfeedback format="html">
@@ -72,7 +91,7 @@
     <hidden>0</hidden>
     <idnumber/>
     <stackversion>
-      <text>2023060500</text>
+      <text>2026010500</text>
     </stackversion>
     <questionvariables>
       <text>dp(x, n) := float(round((x+10^(-8))*10^n)/10^n);
@@ -205,7 +224,10 @@ ta2: unaccounted_variation;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt1_unaccounted-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text><![CDATA[<p dir="ltr" style="text-align: left;">The unaccounted for variability can be found by looking at the residual SS / total SS (then multiplied by 100 to get the percentage)<br></p>]]></text>
+          <text><![CDATA[<p dir="ltr" style="text-align: left;">
+[[lang code="en"]]The unexplained variation can be found by dividing the residual sum of squares by the total sum of squares, then multiplying by 100 to obtain the percentage.[[/lang]]
+[[lang code="fr"]]La part de variation non expliquée s'obtient en divisant la somme des carrés résiduelle par la somme des carrés totale, puis en multipliant le résultat par 100 pour obtenir un pourcentage.[[/lang]]
+</p>]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -239,7 +261,10 @@ ta2: unaccounted_variation;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt1_variety-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text><![CDATA[<p dir="ltr" style="text-align: left;">Variety accounts for {@variety_ss@}/{@total_ss@} * 100 of variation in the yield.&nbsp;</p>]]></text>
+          <text><![CDATA[<p dir="ltr" style="text-align: left;">
+[[lang code="en"]]Variety accounts for {@variety_ss@}/{@total_ss@} × 100% of the variation in yield.[[/lang]]
+[[lang code="fr"]]La variété explique {@variety_ss@}/{@total_ss@} × 100&nbsp;% de la variation du rendement.[[/lang]]
+</p>]]></text>
         </falsefeedback>
       </node>
     </prt>

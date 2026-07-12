@@ -5,56 +5,70 @@
       <text>9: ANOVA table - Tomato data</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>Here is an incomplete analysis of variance (ANOVA) table for the tomato data for <b>\(2\) years together</b>.
-<p>Complete the ANOVA table.</p> 
-<p><b>Give the values to \(1\) decimal place.</b></p> 
+      <text><![CDATA[<p>
+[[lang code="en"]]Here is an incomplete analysis of variance (ANOVA) table for the tomato data for <b>\(2\) years together</b>.[[/lang]]
+[[lang code="fr"]]Voici un tableau d'analyse de la variance (ANOVA) incomplet pour les données sur les tomates correspondant à <b>\(2\) années combinées</b>.[[/lang]]
+</p>
+
+<p>
+[[lang code="en"]]Complete the ANOVA table.[[/lang]]
+[[lang code="fr"]]Complétez le tableau d'ANOVA.[[/lang]]
+</p>
+
+<p>
+<b>
+[[lang code="en"]]Give the values to \(1\) decimal place.[[/lang]]
+[[lang code="fr"]]Donnez les valeurs à \(1\) décimale près.[[/lang]]
+</b>
+</p>
 
 <p>
 <style type="text/css">
 #maintable td.blue {color:#00F;}
 </style>
+
 <table>
 <caption></caption>
 <thead>
 <tr>
-<th scope="col" style="text-align: center;border: 1px solid black; " width="100">Term</th>
-<th scope="col" style="text-align: center; border: 1px solid black;" width="100">Df</th>
-<th scope="col" style="text-align: center; border: 1px solid black;" width="100">Sum Sq</th>
-<th scope="col" style="text-align: center;border: 1px solid black;" width="100">Mean Sq</th>
-<th scope="col" style="text-align: center; border: 1px solid black;" width="100">F Value</th>
+<th scope="col" style="text-align: center;border: 1px solid black; " width="100">[[lang code="en"]]Term[[/lang]][[lang code="fr"]]Terme[[/lang]]</th>
+<th scope="col" style="text-align: center; border: 1px solid black;" width="100">[[lang code="en"]]Df[[/lang]][[lang code="fr"]]ddl[[/lang]]</th>
+<th scope="col" style="text-align: center; border: 1px solid black;" width="100">[[lang code="en"]]Sum Sq[[/lang]][[lang code="fr"]]Somme des carrés[[/lang]]</th>
+<th scope="col" style="text-align: center;border: 1px solid black;" width="100">[[lang code="en"]]Mean Sq[[/lang]][[lang code="fr"]]Carré moyen[[/lang]]</th>
+<th scope="col" style="text-align: center; border: 1px solid black;" width="100">[[lang code="en"]]F Value[[/lang]][[lang code="fr"]]Valeur de F[[/lang]]</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Light</td>
+<td style="text-align: center;border: 1px solid black; ">[[lang code="en"]]Light[[/lang]][[lang code="fr"]]Lumière[[/lang]]</td>
 <td style="text-align: center;border: 1px solid black; ">{@light_df@}</td>
 <td style="text-align: center;border: 1px solid black; ">{@light_ss@}</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans4]] [[validation:ans4]] [[feedback:prt4]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans8]] [[validation:ans8]] [[feedback:prt8]]</td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Heat</td>
+<td style="text-align: center;border: 1px solid black; ">[[lang code="en"]]Heat[[/lang]][[lang code="fr"]]Température[[/lang]]</td>
 <td style="text-align: center;border: 1px solid black; ">{@heat_df@}</td>
 <td style="text-align: center;border: 1px solid black; ">{@heat_ss@}</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans9]] [[validation:ans9]] [[feedback:prt9]]</td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Variety</td>
+<td style="text-align: center;border: 1px solid black; ">[[lang code="en"]]Variety[[/lang]][[lang code="fr"]]Variété[[/lang]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans1]] [[validation:ans1]] [[feedback:prt1a]]</td>
 <td style="text-align: center;border: 1px solid black; ">{@variety_ss@}</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans6]] [[validation:ans6]] [[feedback:prt6]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans10]] [[validation:ans10]] [[feedback:prt10]]</td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Residuals</td>
+<td style="text-align: center;border: 1px solid black; ">[[lang code="en"]]Residuals[[/lang]][[lang code="fr"]]Résidus[[/lang]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</td>
 <td style="text-align: center;border: 1px solid black; ">[[input:ans7]] [[validation:ans7]] [[feedback:prt7]]</td>
 <td style="text-align: center;border: 1px solid black; "></td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Total</td>
+<td style="text-align: center;border: 1px solid black; ">[[lang code="en"]]Total[[/lang]][[lang code="fr"]]Total[[/lang]]</td>
 <td style="text-align: center;border: 1px solid black; ">{@total_df@}</td>
 <td style="text-align: center;border: 1px solid black; ">{@total_ss@}</td>
 <td style="text-align: center;border: 1px solid black; "></td>
@@ -65,61 +79,78 @@
 </p>]]></text>
     </questiontext>
     <generalfeedback format="html">
-      <text><![CDATA[<p>The complete ANOVA table is shown below.</p>
+      <text><![CDATA[<p>
+[[lang code="en"]]The complete ANOVA table is shown below.[[/lang]]
+[[lang code="fr"]]Le tableau d’ANOVA complet est présenté ci-dessous.[[/lang]]
+</p>
 
-<p>There are a few key points to remember:</p>
+<p>
+[[lang code="en"]]There are a few key points to remember:[[/lang]]
+[[lang code="fr"]]Quelques points essentiels sont à retenir :[[/lang]]
+</p>
+
 <ul>
-  <li>The residual is the "left over" after taking into account the variables. So the residual Df and sum of squares is the difference between the total values and the sum of the variables values.</li>
-  <li>The mean sum of squares is simply the sum of squares per Df.</li>
-  <li>The F value is the ratio of the mean sum of squares and the residual sum of squares. It allows us to compare the variability explained by a variable compared to the unexplained (residual) variability.</li>
+  <li>
+    [[lang code="en"]]The residual is the "left over" after taking into account the variables. So the residual Df and sum of squares are the difference between the total values and the sum of the values for the variables.[[/lang]]
+    [[lang code="fr"]]Le résidu correspond à ce qui reste après avoir pris en compte les variables. Ainsi, les degrés de liberté et la somme des carrés résiduels correspondent à la différence entre les valeurs totales et la somme des valeurs des variables.[[/lang]]
+  </li>
+  <li>
+    [[lang code="en"]]The mean square is simply the sum of squares divided by the degrees of freedom.[[/lang]]
+    [[lang code="fr"]]Le carré moyen est simplement égal à la somme des carrés divisée par le nombre de degrés de liberté.[[/lang]]
+  </li>
+  <li>
+    [[lang code="en"]]The F value is the ratio of the mean square to the residual mean square. It allows us to compare the variability explained by a factor with the unexplained (residual) variability.[[/lang]]
+    [[lang code="fr"]]La valeur de F est le rapport entre le carré moyen et le carré moyen résiduel. Elle permet de comparer la variabilité expliquée par un facteur à la variabilité non expliquée (résiduelle).[[/lang]]
+  </li>
 </ul>
+
 <p>
 <table>
 <caption></caption>
 <thead>
 <tr>
-<th scope="col" style="text-align: center;border: 1px solid black; " width="100">Term</th>
-<th scope="col" style="text-align: center; border: 1px solid black;" width="100">Df</th>
-<th scope="col" style="text-align: center; border: 1px solid black;" width="100">Sum Sq</th>
-<th scope="col" style="text-align: center;border: 1px solid black;" width="100">Mean Sq</th>
-<th scope="col" style="text-align: center; border: 1px solid black;" width="100">F Value</th>
+<th scope="col" style="text-align: center;border: 1px solid black;" width="100">[[lang code="en"]]Term[[/lang]][[lang code="fr"]]Terme[[/lang]]</th>
+<th scope="col" style="text-align: center; border: 1px solid black;" width="100">[[lang code="en"]]Df[[/lang]][[lang code="fr"]]ddl[[/lang]]</th>
+<th scope="col" style="text-align: center; border: 1px solid black;" width="100">[[lang code="en"]]Sum Sq[[/lang]][[lang code="fr"]]Somme des carrés[[/lang]]</th>
+<th scope="col" style="text-align: center;border: 1px solid black;" width="100">[[lang code="en"]]Mean Sq[[/lang]][[lang code="fr"]]Carré moyen[[/lang]]</th>
+<th scope="col" style="text-align: center; border: 1px solid black;" width="100">[[lang code="en"]]F Value[[/lang]][[lang code="fr"]]Valeur de F[[/lang]]</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Light</td>
-<td class="blue" style="text-align: center;border: 1px solid black; ">{@light_df@}</td>
-<td style="text-align: center;border: 1px solid black; ">{@light_ss@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta4@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta8@}</td>
+<td style="text-align: center;border: 1px solid black;">[[lang code="en"]]Light[[/lang]][[lang code="fr"]]Lumière[[/lang]]</td>
+<td class="blue" style="text-align: center;border: 1px solid black;">{@light_df@}</td>
+<td style="text-align: center;border: 1px solid black;">{@light_ss@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta4@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta8@}</td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Heat</td>
-<td style="text-align: center;border: 1px solid black; ">{@heat_df@}</td>
-<td style="text-align: center;border: 1px solid black; ">{@heat_ss@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta5@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta9@}</td>
+<td style="text-align: center;border: 1px solid black;">[[lang code="en"]]Heat[[/lang]][[lang code="fr"]]Température[[/lang]]</td>
+<td style="text-align: center;border: 1px solid black;">{@heat_df@}</td>
+<td style="text-align: center;border: 1px solid black;">{@heat_ss@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta5@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta9@}</td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Variety</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta1@}</td>
-<td style="text-align: center;border: 1px solid black; ">{@variety_ss@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta6@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta10@}</td>
+<td style="text-align: center;border: 1px solid black;">[[lang code="en"]]Variety[[/lang]][[lang code="fr"]]Variété[[/lang]]</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta1@}</td>
+<td style="text-align: center;border: 1px solid black;">{@variety_ss@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta6@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta10@}</td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Residuals</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta2@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta3@}</td>
-<td style="color:#00F; text-align: center;border: 1px solid black; ">{@ta7@}</td>
-<td style="text-align: center;border: 1px solid black; "></td>
+<td style="text-align: center;border: 1px solid black;">[[lang code="en"]]Residuals[[/lang]][[lang code="fr"]]Résidus[[/lang]]</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta2@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta3@}</td>
+<td style="color:#00F; text-align: center;border: 1px solid black;">{@ta7@}</td>
+<td style="text-align: center;border: 1px solid black;"></td>
 </tr>
 <tr>
-<td style="text-align: center;border: 1px solid black; ">Total</td>
-<td style="text-align: center;border: 1px solid black; ">{@total_df@}</td>
-<td style="text-align: center;border: 1px solid black; ">{@total_ss@}</td>
-<td style="text-align: center;border: 1px solid black; "></td>
-<td style="text-align: center;border: 1px solid black; "></td>
+<td style="text-align: center;border: 1px solid black;">[[lang code="en"]]Total[[/lang]][[lang code="fr"]]Total[[/lang]]</td>
+<td style="text-align: center;border: 1px solid black;">{@total_df@}</td>
+<td style="text-align: center;border: 1px solid black;">{@total_ss@}</td>
+<td style="text-align: center;border: 1px solid black;"></td>
+<td style="text-align: center;border: 1px solid black;"></td>
 </tr>
 </tbody>
 </table>
@@ -130,7 +161,7 @@
     <hidden>0</hidden>
     <idnumber/>
     <stackversion>
-      <text>2023060500</text>
+      <text>2026010500</text>
     </stackversion>
     <questionvariables>
       <text>dp(x, n) := float(round((x+10^(-8))*10^n)/10^n);
@@ -400,7 +431,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt10-1-T</trueanswernote>
         <truefeedback format="html">
-          <text>Correct F value based on your mean sum of squares and residual sum of squares.</text>
+          <text><![CDATA[[[lang code="en"]]Correct F value based on your mean square and residual mean square.[[/lang]]
+[[lang code="fr"]]Valeur de F correcte calculée à partir de votre carré moyen et du carré moyen résiduel.[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -425,7 +457,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt10-2-T</trueanswernote>
         <truefeedback format="html">
-          <text>Hmm, how did this happen? Your F value is correct, but your mean sum of squares or residual sum of squares is not. Did you make a typing mistake? Anyway you still get some marks :)</text>
+          <text><![CDATA[[[lang code="en"]]Hmm, how did this happen? Your F value is correct, but your mean square or residual mean square is not. Did you make a typing mistake? Anyway, you still get some marks :)[[/lang]]
+[[lang code="fr"]]Hum, comment cela a-t-il pu arriver ? Votre valeur de F est correcte, mais votre carré moyen ou votre carré moyen résiduel ne l’est pas. Avez-vous fait une erreur de saisie ? Quoi qu’il en soit, vous obtenez tout de même quelques points :)[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -433,7 +466,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt10-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text>The F value is the ratio of the mean sum of squares over the residual sum of squares.</text>
+          <text><![CDATA[[[lang code="en"]]The F value is the ratio of the mean square to the residual mean square.[[/lang]]
+[[lang code="fr"]]La valeur de F est le rapport entre le carré moyen et le carré moyen résiduel.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -467,7 +501,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt2-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text>In the tomato data there are two varieties, hence there is \(1\) i.e. \((n-1)\) degrees of freedom.</text>
+          <text><![CDATA[[[lang code="en"]]In the tomato data there are two varieties, hence there is \(1\), i.e. \((n-1)\), degree of freedom.[[/lang]]
+[[lang code="fr"]]Dans les données sur les tomates, il y a deux variétés ; il y a donc \(1\), c’est-à-dire \((n-1)\), degré de liberté.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -493,7 +528,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt2-1-T</trueanswernote>
         <truefeedback format="html">
-          <text>Correct residual Df based on the Df values of light, heat and variety in your table.</text>
+          <text><![CDATA[[[lang code="en"]]Correct residual Df based on the Df values for light, heat, and variety in your table.[[/lang]]
+[[lang code="fr"]]Nombre correct de degrés de liberté résiduels calculé à partir des degrés de liberté de la lumière, de la température et de la variété dans votre tableau.[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -518,7 +554,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt2-2-T</trueanswernote>
         <truefeedback format="html">
-          <text>Hmm, how did this happen? Your residual Df is correct, but your variety Df is not. Did you make a typing mistake? Anyway you still get some marks :)</text>
+          <text><![CDATA[[[lang code="en"]]Hmm, how did this happen? Your residual Df is correct, but your variety Df is not. Did you make a typing mistake? Anyway, you still get some marks :)[[/lang]]
+[[lang code="fr"]]Hum, comment cela a-t-il pu arriver ? Votre nombre de degrés de liberté résiduels est correct, mais celui de la variété ne l’est pas. Avez-vous fait une erreur de saisie ? Quoi qu’il en soit, vous obtenez tout de même quelques points :)[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -526,7 +563,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt2-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text><![CDATA[Residual is the "left over" from the variables. So the residual degrees of freedom is the total degree of freedom of the data minus the degrees of freedoms of the variables.]]></text>
+          <text><![CDATA[[[lang code="en"]]The residual is the "left over" after accounting for the factors. Therefore, the residual degrees of freedom are equal to the total degrees of freedom minus the degrees of freedom for the factors.[[/lang]]
+[[lang code="fr"]]Le résidu correspond à ce qui reste après avoir pris en compte les facteurs. Ainsi, les degrés de liberté résiduels sont égaux au nombre total de degrés de liberté moins les degrés de liberté des facteurs.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -560,7 +598,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt3-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text>Like the degrees of freedom, the residual sum of squares is the total sum of squares minus the sums of squares of the variables.</text>
+          <text><![CDATA[[[lang code="en"]]Like the degrees of freedom, the residual sum of squares is the total sum of squares minus the sums of squares for the factors.[[/lang]]
+[[lang code="fr"]]Comme pour les degrés de liberté, la somme des carrés résiduelle est égale à la somme des carrés totale moins les sommes des carrés des facteurs.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -594,7 +633,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt4-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text>Mean sum of squares is the sum of squares per degree of freedom.</text>
+          <text><![CDATA[[[lang code="en"]]Mean square is the sum of squares divided by the degrees of freedom.[[/lang]]
+[[lang code="fr"]]Le carré moyen est obtenu en divisant la somme des carrés par le nombre de degrés de liberté.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -628,7 +668,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt5-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text>Mean sum of squares is the sum of squares per degree of freedom.</text>
+          <text><![CDATA[[[lang code="en"]]Mean square is the sum of squares divided by the degrees of freedom.[[/lang]]
+[[lang code="fr"]]Le carré moyen est obtenu en divisant la somme des carrés par le nombre de degrés de liberté.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -654,7 +695,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt6-1-T</trueanswernote>
         <truefeedback format="html">
-          <text>Correct mean square value based on your sum of squares and Df.</text>
+          <text><![CDATA[[[lang code="en"]]Correct mean square value based on your sum of squares and Df.[[/lang]]
+[[lang code="fr"]]Carré moyen correct calculé à partir de votre somme des carrés et de vos degrés de liberté.[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -679,7 +721,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt6-2-T</trueanswernote>
         <truefeedback format="html">
-          <text>Hmm, how did this happen? Your mean sum of squares is correct, but your Df is not. Did you make a typing mistake? Anyway you still get some marks :)</text>
+          <text><![CDATA[[[lang code="en"]]Hmm, how did this happen? Your mean square is correct, but your Df is not. Did you make a typing mistake? Anyway, you still get some marks :)[[/lang]]
+[[lang code="fr"]]Hum, comment cela a-t-il pu arriver ? Votre carré moyen est correct, mais votre nombre de degrés de liberté ne l’est pas. Avez-vous fait une erreur de saisie ? Quoi qu’il en soit, vous obtenez tout de même quelques points :)[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -687,7 +730,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt6-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text>Mean sum of squares is the sum of squares per degree of freedom.</text>
+          <text><![CDATA[[[lang code="en"]]Mean square is the sum of squares divided by the degrees of freedom.[[/lang]]
+[[lang code="fr"]]Le carré moyen est obtenu en divisant la somme des carrés par le nombre de degrés de liberté.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -713,7 +757,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt7-1-T</trueanswernote>
         <truefeedback format="html">
-          <text>Correct residual mean square value based on your residual sum of squares and Df.</text>
+          <text><![CDATA[[[lang code="en"]]Correct residual mean square value based on your residual sum of squares and residual degrees of freedom.[[/lang]]
+[[lang code="fr"]]Carré moyen résiduel correct calculé à partir de votre somme des carrés résiduelle et de vos degrés de liberté résiduels.[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -738,7 +783,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt7-2-T</trueanswernote>
         <truefeedback format="html">
-          <text>Hmm, how did this happen? Your mean sum of squares is correct, but your sum of squares or Df is not. Did you make a typing mistake? Anyway you still get some marks :)</text>
+          <text><![CDATA[[[lang code="en"]]Hmm, how did this happen? Your mean square is correct, but your sum of squares or Df is not. Did you make a typing mistake? Anyway, you still get some marks :)[[/lang]]
+[[lang code="fr"]]Hum, comment cela a-t-il pu arriver ? Votre carré moyen est correct, mais votre somme des carrés ou votre nombre de degrés de liberté ne l’est pas. Avez-vous fait une erreur de saisie ? Quoi qu’il en soit, vous obtenez tout de même quelques points :)[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -746,7 +792,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt7-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text>Mean sum of squares is the sum of squares per degree of freedom.</text>
+          <text><![CDATA[[[lang code="en"]]Mean square is the sum of squares divided by the degrees of freedom.[[/lang]]
+[[lang code="fr"]]Le carré moyen est obtenu en divisant la somme des carrés par le nombre de degrés de liberté.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -772,7 +819,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt8-1-T</trueanswernote>
         <truefeedback format="html">
-          <text>Correct F value based on your mean sum of squares and residual sum of squares.</text>
+          <text><![CDATA[[[lang code="en"]]Correct F value based on your mean square and residual mean square.[[/lang]]
+[[lang code="fr"]]Valeur de F correcte calculée à partir de votre carré moyen et du carré moyen résiduel.[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -797,7 +845,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt8-2-T</trueanswernote>
         <truefeedback format="html">
-          <text>Hmm, how did this happen? Your F value is correct, but your mean ss is not. Did you make a typing mistake? Anyway you still get some marks :)</text>
+          <text><![CDATA[[[lang code="en"]]Hmm, how did this happen? Your F value is correct, but your mean square is not. Did you make a typing mistake? Anyway, you still get some marks :)[[/lang]]
+[[lang code="fr"]]Hum, comment cela a-t-il pu arriver ? Votre valeur de F est correcte, mais votre carré moyen ne l’est pas. Avez-vous fait une erreur de saisie ? Quoi qu’il en soit, vous obtenez tout de même quelques points :)[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -805,7 +854,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt8-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text>The F value is the ratio of the mean sum of squares over the residual sum of squares.</text>
+          <text><![CDATA[[[lang code="en"]]The F value is the ratio of the mean square to the residual mean square.[[/lang]]
+[[lang code="fr"]]La valeur de F est le rapport entre le carré moyen et le carré moyen résiduel.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
@@ -831,7 +881,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt9-1-T</trueanswernote>
         <truefeedback format="html">
-          <text>Correct F value based on your mean sum of squares and residual sum of squares.</text>
+          <text><![CDATA[[[lang code="en"]]Correct F value based on your mean square and residual mean square.[[/lang]]
+[[lang code="fr"]]Valeur de F correcte calculée à partir de votre carré moyen et du carré moyen résiduel.[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
@@ -856,7 +907,8 @@ ta10:variety_f;</text>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt9-2-T</trueanswernote>
         <truefeedback format="html">
-          <text>Hmm, how did this happen? Your F value is correct, but your mean sum of squares or residual sum of squares is not. Did you make a typing mistake? Anyway you still get some marks :)</text>
+          <text><![CDATA[[[lang code="en"]]Hmm, how did this happen? Your F value is correct, but your mean square or residual mean square is not. Did you make a typing mistake? Anyway, you still get some marks :)[[/lang]]
+[[lang code="fr"]]Hum, comment cela a-t-il pu arriver ? Votre valeur de F est correcte, mais votre carré moyen ou votre carré moyen résiduel ne l’est pas. Avez-vous fait une erreur de saisie ? Quoi qu’il en soit, vous obtenez tout de même quelques points :)[[/lang]]]]></text>
         </truefeedback>
         <falsescoremode>-</falsescoremode>
         <falsescore>0</falsescore>
@@ -864,7 +916,8 @@ ta10:variety_f;</text>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt9-2-F</falseanswernote>
         <falsefeedback format="html">
-          <text>The F value is the ratio of the mean sum of squares over the residual sum of squares.</text>
+          <text><![CDATA[[[lang code="en"]]The F value is the ratio of the mean square to the residual mean square.[[/lang]]
+[[lang code="fr"]]La valeur de F est le rapport entre le carré moyen et le carré moyen résiduel.[[/lang]]]]></text>
         </falsefeedback>
       </node>
     </prt>
