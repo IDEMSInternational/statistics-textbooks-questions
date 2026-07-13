@@ -198,9 +198,7 @@ m_ans3: [
   [castext("[[lang code='en,other']]A[[/lang]][[lang code='fr']]A[[/lang]]"), false],
   [castext("[[lang code='en,other']]B[[/lang]][[lang code='fr']]B[[/lang]]"), false],
   [castext("[[lang code='en,other']]It depends[[/lang]][[lang code='fr']]Cela dépend[[/lang]]"), true]
-];
-
-dumvar: 3;]]></text>
+];]]></text>
     </questionvariables>
     <specificfeedback format="html">
       <text/>
